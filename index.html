@@ -262,20 +262,12 @@ function startViewer(m) {
 
 function showPlatformHelp(e) {
   e.preventDefault();
-  alert('完整平台（生成 / 高模 / UV / FBX）需要在这台电脑上运行：
-
-'
-    + '1. 双击 D:\\DSH视频\\spatial-lab\\启动平台.bat
-'
-    + '2. 浏览器打开 http://127.0.0.1:8791/
-
-'
-    + '本页（素材库）是静态托管，随时可看、不依赖开机。');
+  alert("完整平台（生成 / 高模细分 / UV 贴图 / FBX 导出）需要在这台电脑上运行：\n\n"
+    + "1. 双击 D:\\\\DSH视频\\\\spatial-lab\\\\启动平台.bat\n"
+    + "2. 浏览器打开 http://127.0.0.1:8791/\n\n"
+    + "本页（素材库）是静态托管，随时可看，不依赖开机。");
 }
-document.getElementById('platformLink').addEventListener('click', showPlatformHelp);
-
-document.getElementById('q').oninput = (e) => { Q = e.target.value.trim().toLowerCase(); render(true); };
-window.addEventListener('resize', () => { if (R) closeModal(); });
+document.getElementById("platformLink").addEventListener("click", showPlatformHelp);
 </script>
 </body>
 </html>
